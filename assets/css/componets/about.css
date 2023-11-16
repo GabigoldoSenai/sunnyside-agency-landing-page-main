@@ -1,0 +1,54 @@
+.about{
+    height: 150vh;
+}
+
+.info-block{
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: var(--White);
+}
+
+.info-block>article{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 10%;
+}
+
+.img-section{
+    min-width: 50%;
+    height: 100%; 
+}
+
+.img-section:nth-child(2){
+    background: url(../../images/desktop/image-transform.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.img-section:nth-child(1){
+    background:url(../../images/desktop/image-stand-out.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.learn-more{
+    position:relative;
+    z-index: 2;
+}
+
+.learn-more::before {
+    content: '';
+    background-color: hsla(196, 61%, 58%, .75);
+    position: absolute;
+    left: -7px;
+    bottom: -3px;
+    border-radius: 10px;
+    width: 120px;
+    height: 10px;
+    z-index: 1;
+}
+
